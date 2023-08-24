@@ -1,0 +1,27 @@
+<div class="layout-row align-items-center justify-content-center mt-50">
+    <section class="layout-column align-items-center justify-content-between">
+        <span class="input layout-row">
+            <input type="number" class="large" [(ngModel)]="inp" (input)="convert('inp')" data-test-id="app-input1" />
+        </span>
+        <br>
+        <select [(ngModel)]="op1" (change)="convert('op1')" data-test-id="app-select1">
+            <option value="Kilometer">Kilometer</option>
+            <option value="Meter">Meter</option>
+            <option value="Centimeter">Centimeter</option>
+        </select>
+    </section>
+
+    <label>⇋</label>
+
+    <section class="layout-column align-items-center justify-content-between">
+        <span class="input layout-row">
+            <input type="number" class="large" [(ngModel)]="resultinp" (input)="convert('resultinp')" data-test-id="app-input2" />
+        </span>
+        <br>
+        <select [(ngModel)]="op2" (change)="convert('op2')" data-test-id="app-select2">
+            <option value="Kilometer">Kilometer</option>
+            <option value="Meter">Meter</option>
+            <option value="Centimeter">Centimeter</option>
+        </select>
+    </section>
+</div>
